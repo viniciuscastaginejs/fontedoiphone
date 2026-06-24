@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fonte do iPhone — Seu Apple é aqui | Ribeirão Preto</title>
+<meta name="description" content="Loja de iPhones em Ribeirão Preto. Toda a linha Apple — iPhone, MacBook, iPad e mais — com parcelamento em até 18x, loja física no Paulista Office e entrega na região.">
+<link rel="icon" href="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782314465/f06ee5d4-62a9-4882-9b36-2e68fe4ccb49.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#ffffff;
+    --off:#fbfbfd;
+    --gray-bg:#f5f5f7;
+    --ink:#1d1d1f;
+    --gray:#6e6e73;
+    --gray-2:#86868b;
+    --line:rgba(0,0,0,0.10);
+    --line-soft:rgba(0,0,0,0.06);
+    --black:#000000;
+    --near:#0a0a0a;
+    --on-dark:#f5f5f7;
+    --on-dark-2:#a1a1a6;
+    --gold:#f5b500;
+    --gold-soft:#ffce4d;
+    --gold-deep:#a87900;
+    --blue:#0071e3;
+    --blue-hover:#0077ed;
+    --link:#0066cc;
+    --green:#25d366;
+    --nav-h:48px;
+    --maxw:1024px;
+    --r:22px;
+    --font:"SF Pro Display","SF Pro Text",-apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:var(--font);background:var(--white);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ::selection{background:var(--gold);color:#000}
+  .ico{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .ico-fill{fill:currentColor;stroke:none}
+
+  /* NAV */
+  .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;background:rgba(255,255,255,0.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line-soft)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 22px}
+  .nav-logo{display:flex;align-items:center}
+  .nav-logo img{height:30px;width:auto;background:#000;border-radius:8px;padding:5px 8px}
+  .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+  .nav-links a{font-size:12px;color:#333;letter-spacing:.01em;transition:color .3s;opacity:.85}
+  .nav-links a:hover{opacity:1}
+  .nav-cta{font-size:12px;font-weight:500;color:#fff!important;background:#000;padding:6px 14px;border-radius:980px;transition:background .3s;opacity:1!important}
+  .nav-cta:hover{background:#333}
+  .nav-burger{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:0;padding:6px}
+  .nav-burger span{width:18px;height:1.5px;background:var(--ink);display:block;transition:.3s}
+
+  /* HERO */
+  .hero{position:relative;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding-top:calc(var(--nav-h) + 60px);background:#000;color:var(--on-dark);overflow:hidden}
+  .hero-glow{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:120%;height:80%;background:radial-gradient(60% 60% at 50% 0%,#3a2c05 0%,rgba(0,0,0,0) 70%);pointer-events:none}
+  .eyebrow{font-size:clamp(17px,2vw,21px);font-weight:600;letter-spacing:.01em;background:linear-gradient(90deg,#ffce4d,#f5b500);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;position:relative}
+  .hero h1{position:relative;font-size:clamp(38px,7.6vw,80px);font-weight:700;letter-spacing:-.025em;line-height:1.03;margin-top:4px;background:linear-gradient(180deg,#fff 35%,#ddd5bf 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero .sub{position:relative;font-size:clamp(18px,2.4vw,26px);color:var(--on-dark-2);margin-top:14px;font-weight:400;letter-spacing:-.01em;max-width:26ch}
+  .hero-ctas{position:relative;display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  .link-blue{color:#ffce4d;font-size:clamp(17px,2vw,21px);display:inline-flex;align-items:center;gap:4px;transition:.3s}
+  .link-blue:hover{text-decoration:underline}
+  .link-blue .ico{width:.9em;height:.9em;stroke-width:2.2}
+  .link-blue.on-light{color:var(--link)}
+  .hero-img{position:relative;width:min(1100px,100%);margin-top:auto;padding:0 12px;will-change:transform}
+  .hero-img img{width:100%;-webkit-mask-image:radial-gradient(130% 130% at 50% 25%,#000 68%,transparent 100%);mask-image:radial-gradient(130% 130% at 50% 25%,#000 68%,transparent 100%)}
+
+  section{position:relative}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .head{text-align:center;max-width:760px;margin:0 auto 44px}
+  .kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep)}
+  .head h2{font-size:clamp(32px,5vw,52px);font-weight:700;letter-spacing:-.022em;line-height:1.06;margin-top:8px}
+  .head p{font-size:clamp(18px,2.2vw,23px);color:var(--gray);margin-top:10px;letter-spacing:-.01em}
+
+  /* MARQUEE */
+  .marquee{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--off);overflow:hidden;padding:18px 0}
+  .marquee-track{display:flex;gap:56px;width:max-content;animation:scroll 28s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee span{font-size:clamp(20px,3vw,30px);font-weight:600;color:#c7c7cc;letter-spacing:-.01em;white-space:nowrap;transition:color .3s}
+  .marquee span:hover{color:var(--ink)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* MAC */
+  .mac{background:#000;color:var(--on-dark);text-align:center;padding:84px 22px 0;overflow:hidden}
+  .mac h2{font-size:clamp(34px,5.4vw,56px);font-weight:700;letter-spacing:-.022em}
+  .mac p{color:var(--on-dark-2);font-size:clamp(18px,2.2vw,24px);margin-top:8px}
+  .mac-ctas{margin-top:14px}
+  .mac-img{max-width:980px;margin:30px auto 0;will-change:transform}
+
+  /* PRODUCTS */
+  .products{padding:90px 0 40px;background:var(--white)}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+  .card{background:var(--gray-bg);border-radius:var(--r);padding:30px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;min-height:420px;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.10)}
+  .card .tag{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-deep)}
+  .card h3{font-size:26px;font-weight:700;letter-spacing:-.015em;margin-top:4px}
+  .card .desc{color:var(--gray);font-size:15px;margin-top:6px}
+  .card .media{margin:22px 0;width:100%;flex-grow:1;display:flex;align-items:center;justify-content:center}
+  .card .media img{max-height:200px;width:auto;object-fit:contain;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .card:hover .media img{transform:scale(1.05)}
+  .card .media.dark{background:radial-gradient(80% 80% at 50% 38%,#1c1c1e 0%,#000 100%);border-radius:18px;padding:14px;width:100%}
+  .card .media.dark img{max-height:230px}
+  .card .foot{color:var(--gray);font-size:14px}
+  .card .card-link{color:var(--link);font-size:16px;margin-top:12px;display:inline-flex;gap:4px;align-items:center}
+  .card .card-link .ico{width:.85em;height:.85em;stroke-width:2.2}
+
+  .ph{width:100%;aspect-ratio:1/1;max-height:200px;border-radius:16px;border:1.5px dashed #c7c7cc;background:repeating-linear-gradient(45deg,#fafafa,#fafafa 10px,#f2f2f4 10px,#f2f2f4 20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--gray-2)}
+  .ph .ico{width:30px;height:30px;stroke-width:1.4}
+  .ph small{font-size:12px;font-weight:500;letter-spacing:.02em}
+
+  /* MORE */
+  .more{padding:50px 0 90px;background:var(--white)}
+  .more-grid{display:grid;gap:20px;grid-template-columns:repeat(4,1fr)}
+  .mini{background:var(--gray-bg);border-radius:18px;padding:22px;text-align:center;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+  .mini:hover{transform:translateY(-5px)}
+  .mini .ph{aspect-ratio:4/3;max-height:130px;margin-bottom:14px}
+  .mini-media{aspect-ratio:4/3;max-height:130px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}
+  .mini-media img{max-height:130px;width:auto;object-fit:contain;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .mini:hover .mini-media img{transform:scale(1.06)}
+  .mini h4{font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .mini p{color:var(--gray);font-size:13px;margin-top:3px}
+
+  /* DIFERENCIAIS */
+  .why{padding:90px 0;background:var(--off)}
+  .feat-grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  .feat{background:var(--white);border:1px solid var(--line-soft);border-radius:var(--r);padding:34px 30px;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+  .feat:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,.08)}
+  .feat .badge{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f5b500,#ffce4d);color:#1d1d1f;font-size:24px;margin-bottom:18px}
+  .feat.d .badge{background:linear-gradient(135deg,#1d1d1f,#3a3a3c);color:#fff}
+  .feat.g .badge{background:linear-gradient(135deg,#1aa34a,#34c759);color:#fff}
+  .feat h3{font-size:21px;font-weight:600;letter-spacing:-.01em}
+  .feat p{color:var(--gray);font-size:15px;margin-top:8px;line-height:1.5}
+
+  /* PARCELAMENTO BANNER */
+  .promo{padding:0}
+  .promo-tile{position:relative;overflow:hidden;background:radial-gradient(120% 120% at 80% 0%,#3a2c05 0%,#000 60%);color:#fff;text-align:center;padding:80px 22px}
+  .promo-tile .big{font-size:clamp(70px,16vw,170px);font-weight:800;letter-spacing:-.04em;line-height:.9;background:linear-gradient(180deg,#ffce4d,#f5b500);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .promo-tile h2{font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-.02em;margin-top:8px}
+  .promo-tile p{color:var(--on-dark-2);font-size:clamp(16px,2vw,20px);margin-top:10px;max-width:40ch;margin-inline:auto}
+  .promo-tile .mac-ctas{margin-top:20px}
+
+  /* TRUST */
+  .trust{padding:74px 22px;background:var(--white);text-align:center}
+  .trust-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+  .stat .num{font-size:clamp(34px,4.6vw,50px);font-weight:700;letter-spacing:-.02em;background:linear-gradient(180deg,#a87900,#f5b500);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stat .lbl{color:var(--gray);font-size:15px;margin-top:2px}
+
+  /* CTA */
+  .cta{background:radial-gradient(120% 120% at 50% 0%,#2a2003 0%,#000 60%);color:var(--on-dark);text-align:center;padding:100px 22px}
+  .cta h2{font-size:clamp(34px,5.4vw,56px);font-weight:700;letter-spacing:-.022em;line-height:1.05}
+  .cta p{color:var(--on-dark-2);font-size:clamp(18px,2.2vw,23px);margin-top:12px;max-width:34ch;margin-inline:auto}
+  .btn-zap{display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:var(--green);color:#03210f;font-weight:600;font-size:18px;padding:16px 34px;border-radius:980px;transition:transform .25s,box-shadow .25s;box-shadow:0 10px 40px rgba(37,211,102,.28)}
+  .btn-zap:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(37,211,102,.42)}
+  .btn-zap .ico{width:22px;height:22px}
+  .cta small{display:block;margin-top:16px;font-size:14px;color:var(--on-dark-2)}
+
+  /* STORE + MAP */
+  .store{padding:90px 0;background:var(--off)}
+  .store-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+  .store-info{display:flex;flex-direction:column;justify-content:center}
+  .store-info .kicker{color:var(--gold-deep)}
+  .store-info h2{font-size:clamp(30px,4.4vw,44px);font-weight:700;letter-spacing:-.02em;margin-top:8px}
+  .store-info .addr{margin-top:22px;display:flex;flex-direction:column;gap:16px}
+  .addr-row{display:flex;gap:14px;align-items:flex-start;font-size:16px}
+  .addr-row .ico{width:22px;height:22px;color:var(--gold-deep);flex-shrink:0;margin-top:2px;stroke-width:1.7}
+  .addr-row b{font-weight:600}
+  .addr-row span{color:var(--gray);display:block;font-size:14px;margin-top:1px}
+  .map{border-radius:var(--r);overflow:hidden;min-height:400px;border:1px solid var(--line-soft);box-shadow:0 14px 40px rgba(0,0,0,.08)}
+  .map iframe{width:100%;height:100%;min-height:400px;border:0;display:block;filter:grayscale(.15)}
+
+  /* FOOTER */
+  footer{background:var(--off);color:var(--gray);font-size:13px;border-top:1px solid var(--line-soft)}
+  .foot-inner{max-width:var(--maxw);margin:0 auto;padding:34px 22px 26px}
+  .foot-top{display:flex;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line-soft)}
+  .foot-top img{height:32px;width:auto;background:#000;border-radius:8px;padding:5px 8px}
+  .foot-cols{display:flex;flex-wrap:wrap;gap:50px;padding:24px 0}
+  .foot-col h4{color:var(--ink);font-size:12px;font-weight:600;margin-bottom:10px;text-transform:uppercase;letter-spacing:.04em}
+  .foot-col a,.foot-col span{display:flex;align-items:center;gap:7px;line-height:2;color:var(--gray);transition:color .3s}
+  .foot-col a:hover{color:var(--ink)}
+  .foot-col .ico{width:15px;height:15px}
+  .foot-legal{padding-top:18px;border-top:1px solid var(--line-soft);line-height:1.6;font-size:12px;color:var(--gray-2)}
+
+  /* FAB */
+  .fab{position:fixed;right:20px;bottom:20px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 26px rgba(37,211,102,.45);transition:transform .3s;animation:fab-in .5s .8s both}
+  .fab:hover{transform:scale(1.08)}
+  .fab .ico{width:30px;height:30px}
+  @keyframes fab-in{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .stagger>*{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .stagger.in>*{opacity:1;transform:none}
+  .stagger.in>*:nth-child(2){transition-delay:.08s}
+  .stagger.in>*:nth-child(3){transition-delay:.16s}
+  .stagger.in>*:nth-child(4){transition-delay:.24s}
+  .stagger.in>*:nth-child(5){transition-delay:.32s}
+  .stagger.in>*:nth-child(6){transition-delay:.40s}
+
+  @media(max-width:900px){
+    .grid{grid-template-columns:1fr;max-width:440px;margin-inline:auto}
+    .more-grid{grid-template-columns:repeat(2,1fr)}
+    .feat-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+    .store-grid{grid-template-columns:1fr}
+    .trust-grid{grid-template-columns:repeat(2,1fr);gap:34px 20px}
+  }
+  @media(max-width:734px){
+    .nav-links{position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);padding:8px 22px;transform:translateY(-130%);transition:transform .4s cubic-bezier(.2,.7,.2,1);border-bottom:1px solid var(--line);max-height:calc(100vh - var(--nav-h));overflow:auto}
+    .nav-links.open{transform:none}
+    .nav-links a{padding:13px 0;font-size:16px;width:100%;border-bottom:1px solid var(--line-soft);opacity:1}
+    .nav-links li:last-child a{border-bottom:0}
+    .nav-burger{display:flex}
+    .nav-cta{display:none}
+    .trust-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto!important}
+    .reveal,.stagger>*{opacity:1!important;transform:none!important;transition:none!important}
+    .marquee-track{animation:none!important}
+    .fab{animation:none!important}
+  }
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px;border-radius:8px}
+</style>
+</head>
+<body>
+
+<!-- SVG SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="1.6"/><circle cx="17.5" cy="17" r="1.6"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 9.5h18M6.5 14.5h4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21c4.5-4.2 7-7.4 7-11a7 7 0 10-14 0c0 3.6 2.5 6.8 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M21 16l-5-5L5 20"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/></symbol>
+  <symbol id="i-watch" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7l.5-3h5l.5 3M9 17l.5 3h5l.5-3"/></symbol>
+  <symbol id="i-buds" viewBox="0 0 24 24"><path d="M8 4c-2 0-3.5 1.8-3.5 4S6 16 8 16s2.5-2 2.5-4V6.5A2.5 2.5 0 008 4zM16 4c2 0 3.5 1.8 3.5 4S18 16 16 16s-2.5-2-2.5-4V6.5A2.5 2.5 0 0116 4z"/></symbol>
+  <symbol id="i-imac" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M9 20h6M10 16l-.5 4M14 16l.5 4"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path class="ico-fill" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2z"/></symbol>
+</svg>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top" aria-label="Fonte do iPhone">
+      <img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782314465/f06ee5d4-62a9-4882-9b36-2e68fe4ccb49.png" alt="Fonte do iPhone">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#iphone">iPhone</a></li>
+      <li><a href="#mac">Mac</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#parcelamento">Parcelamento</a></li>
+      <li><a href="#loja">Loja</a></li>
+      <li><a class="nav-cta" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Comprar no Zap</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<span id="top"></span>
+
+<!-- HERO -->
+<header class="hero" id="iphone">
+  <div class="hero-glow"></div>
+  <p class="eyebrow reveal">iPhone</p>
+  <h1 class="reveal">Seu Apple é aqui.<br>Parcele em até 18x.</h1>
+  <p class="sub reveal">Toda a linha de iPhone, com loja física em Ribeirão Preto e entrega na região.</p>
+  <div class="hero-ctas reveal">
+    <a class="link-blue" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Ver preço no WhatsApp <svg class="ico"><use href="#i-chevron"/></svg></a>
+    <a class="link-blue" href="#produtos">Conhecer a loja <svg class="ico"><use href="#i-chevron"/></svg></a>
+  </div>
+  <div class="hero-img reveal" id="heroImg">
+    <img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782308614/e4434281-aaf6-4afe-8008-62bbebb54283.png" alt="iPhone Pro, detalhe do conjunto de câmeras">
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>iPhone</span><span>MacBook</span><span>iPad</span><span>Apple Watch</span><span>AirPods</span><span>iMac</span><span>Mac mini</span><span>Apple TV</span>
+    <span>iPhone</span><span>MacBook</span><span>iPad</span><span>Apple Watch</span><span>AirPods</span><span>iMac</span><span>Mac mini</span><span>Apple TV</span>
+  </div>
+</div>
+
+<!-- MAC -->
+<section class="mac" id="mac">
+  <h2 class="reveal">MacBook</h2>
+  <p class="reveal">Potência de verdade, parcelada do seu jeito.</p>
+  <div class="mac-ctas reveal">
+    <a class="link-blue" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Consultar modelos e preços <svg class="ico"><use href="#i-chevron"/></svg></a>
+  </div>
+  <div class="mac-img reveal" id="macImg">
+    <img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782308845/92f0838c-454e-4369-980a-13d08071a027.png" alt="MacBook entreaberto em fundo escuro">
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="produtos">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">A loja</span>
+      <h2>Escolha seu Apple.</h2>
+      <p>Atendimento humano, do primeiro contato até a entrega na sua mão.</p>
+    </div>
+    <div class="grid stagger">
+      <article class="card">
+        <span class="tag">iPhone</span>
+        <h3>iPhone</h3>
+        <p class="desc">Todos os modelos, lacrados e com garantia.</p>
+        <div class="media dark"><img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782309735/ChatGPT_Image_24_de_jun._de_2026_11_00_30_vaskkz.png" alt="iPhone"></div>
+        <span class="foot">Parcele em até 18x</span>
+        <a class="card-link" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Ver preços <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card">
+        <span class="tag">Mac</span>
+        <h3>MacBook</h3>
+        <p class="desc">Air e Pro para trabalho, estudo e criação.</p>
+        <div class="media"><img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782310077/3dd05b24-4c65-4c31-a020-1f60a706f5d3.png" alt="MacBook Pro"></div>
+        <span class="foot">Garantia e nota fiscal</span>
+        <a class="card-link" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Ver preços <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card">
+        <span class="tag">iPad</span>
+        <h3>iPad</h3>
+        <p class="desc">Para criar, estudar e produzir em qualquer lugar.</p>
+        <div class="media"><img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782309888/4524005e-1298-44c7-85bc-1f1b7a67f756.png" alt="iPad com Magic Keyboard"></div>
+        <span class="foot">Linha completa disponível</span>
+        <a class="card-link" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Ver preços <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MORE -->
+<section class="more">
+  <div class="wrap">
+    <div class="head reveal" style="margin-bottom:34px">
+      <h2 style="font-size:clamp(26px,4vw,38px)">Todo o ecossistema Apple.</h2>
+      <p style="font-size:clamp(16px,2vw,20px)">Espaços prontos para as fotos dos próximos produtos.</p>
+    </div>
+    <div class="more-grid stagger">
+      <div class="mini"><div class="ph"><svg class="ico"><use href="#i-watch"/></svg><small>Adicionar foto</small></div><h4>Apple Watch</h4><p>Vários modelos</p></div>
+      <div class="mini"><div class="ph"><svg class="ico"><use href="#i-buds"/></svg><small>Adicionar foto</small></div><h4>AirPods</h4><p>Pro e geração padrão</p></div>
+      <div class="mini"><div class="ph"><svg class="ico"><use href="#i-imac"/></svg><small>Adicionar foto</small></div><h4>iMac</h4><p>Desktop tudo-em-um</p></div>
+      <div class="mini"><div class="ph"><svg class="ico"><use href="#i-spark"/></svg><small>Adicionar foto</small></div><h4>Acessórios</h4><p>Capas, cabos e mais</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="why" id="melo">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Por que a Fonte</span>
+      <h2>Seu Apple, do jeito certo.</h2>
+      <p>Produto original, parcelamento que cabe no bolso e gente de verdade pra te atender.</p>
+    </div>
+    <div class="feat-grid stagger">
+      <div class="feat"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-card"/></svg></div><h3>Parcele em até 18x</h3><p>Leve seu Apple agora e divida no cartão de um jeito que cabe no seu mês.</p></div>
+      <div class="feat d"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-pin"/></svg></div><h3>Loja física</h3><p>Estamos no Paulista Office, em Ribeirão Preto. Venha ver de perto.</p></div>
+      <div class="feat g"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-truck"/></svg></div><h3>Entrega na região</h3><p>Entregamos em Ribeirão Preto e cidades da região com agilidade.</p></div>
+      <div class="feat"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-shield"/></svg></div><h3>Garantia e segurança</h3><p>Compra protegida, com suporte real do primeiro contato à entrega.</p></div>
+      <div class="feat d"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-spark"/></svg></div><h3>Produtos originais</h3><p>Aparelhos novos e lacrados, conferidos antes de sair daqui.</p></div>
+      <div class="feat g"><div class="badge"><svg class="ico" style="width:24px;height:24px"><use href="#i-wa"/></svg></div><h3>Atendimento no Zap</h3><p>Tira dúvidas, escolhe o modelo e finaliza tudo pelo WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARCELAMENTO -->
+<section class="promo" id="parcelamento">
+  <div class="promo-tile">
+    <div class="reveal">
+      <div class="big">18x</div>
+      <h2>Parcele seu Apple em até 18 vezes.</h2>
+      <p>Sem complicação. Você escolhe o modelo, a gente ajeita a melhor condição pra você.</p>
+      <div class="mac-ctas">
+        <a class="link-blue" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Simular no WhatsApp <svg class="ico"><use href="#i-chevron"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="trust-grid stagger">
+    <div class="stat"><div class="num" data-count="430" data-suffix="+">0</div><div class="lbl">Publicações</div></div>
+    <div class="stat"><div class="num" data-count="26" data-suffix=" mil" data-decimal="26,7 mil">0</div><div class="lbl">Seguidores</div></div>
+    <div class="stat"><div class="num" data-count="18" data-suffix="x">0</div><div class="lbl">Parcelamento</div></div>
+    <div class="stat"><div class="num" data-text="Região">Região</div><div class="lbl">Entregamos em RP e região</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 class="reveal">Pronto pra garantir o seu?</h2>
+  <p class="reveal">Chama no WhatsApp agora e receba o preço e as condições em minutos.</p>
+  <a class="btn-zap reveal" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">
+    <svg class="ico"><use href="#i-wa"/></svg> Falar no WhatsApp
+  </a>
+  <small>Fonte do iPhone · Ribeirão Preto, SP</small>
+</section>
+
+<!-- STORE + MAP -->
+<section class="store" id="loja">
+  <div class="wrap">
+    <div class="store-grid">
+      <div class="store-info reveal">
+        <span class="kicker">Onde estamos</span>
+        <h2>Loja física em Ribeirão.</h2>
+        <div class="addr">
+          <div class="addr-row"><svg class="ico"><use href="#i-pin"/></svg><div><b>Paulista Office</b><span>Ribeirão Preto, SP — confirme a sala pelo WhatsApp</span></div></div>
+          <div class="addr-row"><svg class="ico"><use href="#i-card"/></svg><div><b>Parcelamento</b><span>Em até 18x no cartão</span></div></div>
+          <div class="addr-row"><svg class="ico"><use href="#i-truck"/></svg><div><b>Entrega</b><span>Ribeirão Preto e região</span></div></div>
+        </div>
+        <div style="margin-top:24px">
+          <a class="link-blue on-light" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener">Falar com a gente <svg class="ico"><use href="#i-chevron"/></svg></a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe
+          title="Localização da Fonte do iPhone — Paulista Office"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Paulista%20Office%2C%20Ribeir%C3%A3o%20Preto%20-%20SP&z=16&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <img src="https://res.cloudinary.com/dtdomrtyp/image/upload/v1782314465/f06ee5d4-62a9-4882-9b36-2e68fe4ccb49.png" alt="Fonte do iPhone">
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col"><h4>Produtos</h4><a href="#iphone">iPhone</a><a href="#mac">MacBook</a><a href="#produtos">iPad</a></div>
+      <div class="foot-col"><h4>Comprar</h4>
+        <a href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg> WhatsApp</a>
+        <a href="https://www.instagram.com/fonteiphonerp/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg> Instagram</a>
+      </div>
+      <div class="foot-col"><h4>Loja</h4>
+        <span><svg class="ico"><use href="#i-pin"/></svg> Paulista Office — Ribeirão Preto, SP</span>
+        <span><svg class="ico"><use href="#i-card"/></svg> Parcelamento em até 18x</span>
+      </div>
+    </div>
+    <div class="foot-legal">
+      Fonte do iPhone · Loja de iPhones em Ribeirão Preto. Preços, condições e disponibilidade informados via WhatsApp.
+      Apple, iPhone, iPad, MacBook e Mac são marcas registradas da Apple Inc. Este site é de um revendedor independente e não possui vínculo oficial com a Apple Inc.
+    </div>
+  </div>
+</footer>
+
+<!-- FAB -->
+<a class="fab" href="https://wa.me/message/Q7EXOGBKRK74C1" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg class="ico"><use href="#i-wa"/></svg>
+</a>
+
+<script>
+  const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+  burger.addEventListener('click',()=>{const o=navLinks.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');burger.setAttribute('aria-expanded',false);}));
+
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal,.stagger').forEach(el=>io.observe(el));
+
+  const cio=new IntersectionObserver((es)=>{es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;cio.unobserve(el);
+    if(el.dataset.text){return;}
+    const end=+el.dataset.count,suf=el.dataset.suffix||'',dec=el.dataset.decimal;let t0=null,dur=1300;
+    const step=(ts)=>{if(!t0)t0=ts;const p=Math.min((ts-t0)/dur,1);const eased=1-Math.pow(1-p,3);
+      if(p>=1&&dec){el.textContent=dec;return;}
+      el.textContent=Math.round(end*eased)+suf;if(p<1)requestAnimationFrame(step);};
+    requestAnimationFrame(step);});},{threshold:.6});
+  document.querySelectorAll('.num').forEach(el=>cio.observe(el));
+
+  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(!reduce){
+    const hero=document.getElementById('heroImg'),mac=document.getElementById('macImg');
+    let ticking=false;
+    const onScroll=()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{
+      const y=window.scrollY;
+      if(hero)hero.style.transform='translateY('+(y*0.08)+'px) scale('+(1+Math.min(y/6000,.04))+')';
+      if(mac){const r=mac.getBoundingClientRect();mac.style.transform='translateY('+((r.top-window.innerHeight/2)*-0.04)+'px)';}
+      ticking=false;});};
+    window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  }
+</script>
+</body>
+</html>
